@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách lớp</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">DANH SÁCH LỚP</h1>
+            <div class="clearfix">
+                <button class="float-left" onclick="show()">Xóa</button>
+                <a type="button" class="float-right p-1" href="add-class.html" target="_blank">Thêm</a>
+            </div>
+            <div class="mt-1">
+                <table class="table" id="table-1">
+                    <thead>
+                    <tr>
+                        <th class="form-check">
+                            <input type="checkbox" class="position-static" name="">
+                        </th>
+                        <th scope="col">Mã lớp</th>
+                        <th scope="col">Tên lớp</th>
+                        <th scope="col">#</th>
+                    </tr>
+                    </thead>
+                    <tbody style="background-color: #ccffcc">
+                    <tr id="tr-1">
+                        <td class="form-check">
+                            <input id="i1" type="checkbox" class="position-static" name="grades[]"
+                                   onchange="change('i1', 'tr-1')">
+                        </td>
+                        <td>THTD50</td>
+                        <td>Tin học trắc địa K50</td>
+                        <td>Sửa</td>
+                    </tr>
+                    <tr id="tr-2">
+                        <td class="form-check">
+                            <input id="i2" type="checkbox" class="position-static" name="grades[]"
+                                   onchange="change('i2', 'tr-2')">
+                        </td>
+                        <td>THTD51</td>
+                        <td>Tin học trắc địa K51</td>
+                        <td>Sửa</td>
+                    </tr>
+                    <tr id="tr-3">
+                        <td class="form-check">
+                            <input id="i3" type="checkbox" class="position-static" name="grades[]"
+                                   onchange="change('i3', 'tr-3')">
+                        </td>
+                        <td>THTD52</td>
+                        <td>Tin học trắc địa K52</td>
+                        <td>Sửa</td>
+                    </tr>
+                    <tr id="tr-4">
+                        <td class="form-check">
+                            <input id="i4" type="checkbox" class="position-static" name="grades[]"
+                                   onchange="change('i4', 'tr-4')">
+                        </td>
+                        <td>THTD53</td>
+                        <td>Tin học trắc địa K53</td>
+                        <td>Sửa</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <button id="btn-check" class="mr-2" onclick="check()">Chọn toàn bộ</button>
+                <button id="btn-uncheck" onclick="uncheck()">Bỏ chọn</button>
+            </div>
+        </div>
+    </div>
+</div>
+ <script src="js/script.js"></script>
+</body>
+</html>

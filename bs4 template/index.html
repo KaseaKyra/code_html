@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+	
+	<form action="" method="get">
+		<label title="Alabama" id="Alabama">
+			<input type="checkbox" value="checkbox" onchange="statecheck('Alabama')" />
+		AL</label>
+		<label title="Alaska" id="Alaska">
+			<input type="checkbox" value="checkbox" onchange="statecheck('Alaska')" />
+		AK</label>
+		<label title="American Samoa" id="AmericanSamoa">
+			<input type="checkbox" value="checkbox" onchange="statecheck('AmericanSamoa')" />
+		AS</label>
+	</form>	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>\
+	<script>
+		function statecheck(layer) {
+			var myLayer = document.getElementById(layer);
+			var input = myLayer.childNodes[0];
+			if(input.checked == true){
+				myLayer.style.backgroundColor = "#bff0a1";
+			} else {
+				myLayer.style.backgroundColor = "#eee";
+			};
+
+		}
+	</script>
+</body>
+</html>

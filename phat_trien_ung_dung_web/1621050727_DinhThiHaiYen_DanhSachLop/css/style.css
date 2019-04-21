@@ -1,0 +1,24 @@
+table.add-class, .add-class th, .add-class td, .t-footer, .content-wrap {
+    border: 2px solid #dee2e6;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#table-1 th {
+    background-color: #009900;
+    color: #fff;
+}
+
+#btn-check, #btn-uncheck {
+    background-color: #fff;
+    border: none;
+}
+
+input[type="checkbox"]:checked {
+    background: blue;
+    color: white
+}
+
